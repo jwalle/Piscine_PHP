@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mendeleiev</title>
+	</head>
+	<style>
+		* 				{ box-sizing: border-box; padding:0; margin:0; }
+		h1				{text-align: center;}
+		body			{padding: 20px;}
+		.wrapper		{width: 1050px; margin: 30px auto; position: relative;}
+		.main li		{width: 56px; height: 60px; border:1px solid rgba(0,0,0,0.3);position:relative;float:left;padding:0 2px;margin:1px;padding-top:20px; overflow:hidden; text-align: center;}
+		.main li span	{display: block; line-height: 1; padding-top: 7px; font-size: 12px; text-align: left;}
+		.main .empty	{border: none;}
+		.main li:before,
+		.main li:after	{content: attr(data); position: absolute; top: 3px; right: 3px; line-height: 1; font-size: 8px;}
+		.t-H			{background:#4DBF4D; color:#222;}
+		.t-Noble		{background:#3366FF; color:#222;}
+		.t-Halo			{background:#33CCCC; color:#222;}
+		.t-Other		{background:#66FF33; color:#222;}
+		.t-Meta			{background:#339966; color:#222;}
+		.t-alka-meta	{background:#FF9900; color:#222;}
+		.t-alka-ear		{background:#FFD633; color:#222;}
+		.t-transi		{background:#993366; color:#222;}
+		.t-post			{background:#999966; color:#222;}
+		.t-Lanta		{background:#FF9966; color:#222;}
+		.t-Acti			{background:#926392; color:#222;}
+		.footer			{text-align: center; margin-top: 10px; margin-bottom: 10px; padding: 10px;}
+	</style>
+	<body>
+		<h1><font color ="red">Tableau de Mendeleiev</font></h1>
+		<div class="wrapper">
+			<ul class = "main" contenteditable="true" data-editable="true">
+
+					<!-- ligne 1 -->
+				<li data="1.0079"  class="t-H">H<span>1</span></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li data="4.0026" class="t-Noble">He<span>2</span></li>
+					<!-- ligne 2 -->
+				<li data="6.941"  class="t-alka-meta">Li<span>3</span></li>
+				<li data="9.0121"  class="t-alka-ear">Be<span>4</span></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li data="10.811"  class="t-Meta">B<span>5</span></li>
+				<li data="12.0107"  class="t-Other">C<span>6</span></li>
+				<li data="14.0067"  class="t-Other">N<span>7</span></li>
+				<li data="15.9994"  class="t-Other">O<span>8</span></li>
+				<li data="18.9984"  class="t-Halo">F<span>9</span></li>
+				<li data="20.1797"  class="t-Noble">Ne<span>10</span></li>
+					<!-- ligne 3 -->
+				<li data="22.98976"  class="t-alka-meta">Na<span>11</span></li>
+				<li data="24.305"  class="t-alka-ear">Mg<span>12</span></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li data="26.9815"  class="t-post">Al<span>13</span></li>
+				<li data="28.0855"  class="t-Meta">Si<span>14</span></li>
+				<li data="30.9737"  class="t-Other">P<span>15</span></li>
+				<li data="32.065"  class="t-Other">S<span>16</span></li>
+				<li data="35.453"  class="t-Halo">Cl<span>17</span></li>
+				<li data="39.948"  class="t-Noble">Ar<span>18</span></li>
+								<!-- ligne 4 -->
+				<li data="39.0983"  class="t-alka-meta">K<span>19</span></li>
+				<li data="40.078"  class="t-alka-ear">Ca<span>20</span></li>
+				<li data="44.9559"  class="t-transi">Sc<span>21</span></li>
+				<li data="47.867"  class="t-transi">Ti<span>22</span></li>
+				<li data="50.9415"  class="t-transi">V<span>23</span></li>
+				<li data="51.9961"  class="t-transi">Cr<span>24</span></li>
+				<li data="54.9331"  class="t-transi">Mn<span>25</span></li>	
+				<li data="55.845"  class="t-transi">Fe<span>26</span></li>
+				<li data="58.9332"  class="t-transi">Co<span>27</span></li>
+				<li data="58.6934"  class="t-transi">Ni<span>28</span></li>
+				<li data="63.546"  class="t-transi">Cu<span>29</span></li>
+				<li data="65.38"  class="t-transi">Zn<span>30</span></li>
+				<li data="69.723"  class="t-post">Ga<span>31</span></li>
+				<li data="72.63"  class="t-Meta">Ge<span>32</span></li>
+				<li data="74.9216"  class="t-Meta">As<span>33</span></li>
+				<li data="78.96"  class="t-Other">Se<span>34</span></li>
+				<li data="79.904"  class="t-Halo">Br<span>35</span></li>
+				<li data="83.798"  class="t-Noble">Kr<span>36</span></li>
+								<!-- ligne 5 -->
+				<li data="85.4678"  class="t-alka-meta">Rb<span>37</span></li>
+				<li data="87.62"  class="t-alka-ear">Sr<span>38</span></li>
+				<li data="88.9058"  class="t-transi">Y<span>39</span></li>
+				<li data="91.224"  class="t-transi">Zr<span>40</span></li>
+				<li data="92.9064"  class="t-transi">Nb<span>41</span></li>
+				<li data="95.96"  class="t-transi">Mo<span>42</span></li>
+				<li data="98"  class="t-transi">Tc<span>43</span></li>	
+				<li data="101.07"  class="t-transi">Ru<span>44</span></li>
+				<li data="102.9055"  class="t-transi">Rh<span>45</span></li>
+				<li data="106.42"  class="t-transi">Pd<span>46</span></li>
+				<li data="107.8682"  class="t-transi">Ag<span>47</span></li>
+				<li data="112.411"  class="t-transi">Cd<span>48</span></li>
+				<li data="114.818"  class="t-post">In<span>49</span></li>
+				<li data="118.71"  class="t-post">Sn<span>50</span></li>
+				<li data="121.76"  class="t-Meta">Sb<span>51</span></li>
+				<li data="127.6"  class="t-Meta">Te<span>52</span></li>
+				<li data="126.9045"  class="t-Halo">I<span>53</span></li>
+				<li data="131.293"  class="t-Noble">Xe<span>54</span></li>
+								<!-- ligne 6 -->
+				<li data="132.9054"  class="t-alka-meta">Cs<span>55</span></li>
+				<li data="137.327"  class="t-alka-ear">Ba<span>56</span></li>
+				<li class="t-Lanta">La-Lu<span></span></li>
+				<li data="178.49"  class="t-transi">Hf<span>72</span></li>
+				<li data="180.9479"  class="t-transi">Ta<span>73</span></li>
+				<li data="183.84"  class="t-transi">W<span>74</span></li>
+				<li data="186.207"  class="t-transi">Re<span>75</span></li>	
+				<li data="190.23"  class="t-transi">Os<span>76</span></li>
+				<li data="192.217"  class="t-transi">Ir<span>77</span></li>
+				<li data="195.084"  class="t-transi">Pt<span>78</span></li>
+				<li data="196.9666"  class="t-transi">Au<span>79</span></li>
+				<li data="200.59"  class="t-transi">Hg<span>80</span></li>
+				<li data="204.3833"  class="t-post">Tl<span>81</span></li>
+				<li data="207.2"  class="t-post">Pb<span>82</span></li>
+				<li data="208.9804"  class="t-post">Bi<span>83</span></li>
+				<li data="209"  class="t-Meta">Po<span>84</span></li>
+				<li data="210"  class="t-Halo">At<span>85</span></li>
+				<li data="222"  class="t-Noble">Rn<span>86</span></li>
+								<!-- ligne 7 -->
+				<li data="223"  class="t-alka-meta">Fr<span>87</span></li>
+				<li data="226"  class="t-alka-ear">Ra<span>88</span></li>
+				<li class="t-Acti">Ac-Lr<span></span></li>
+				<li data="267"  class="t-transi">Rf<span>104</span></li>
+				<li data="268"  class="t-transi">Db<span>105</span></li>
+				<li data="271"  class="t-transi">Sg<span>106</span></li>
+				<li data="272"  class="t-transi">Bh<span>107</span></li>
+				<li data="270"  class="t-transi">Hs<span>108</span></li>
+				<li data="276"  class="t-transi">Mt<span>109</span></li>
+				<li data="281"  class="t-transi">Ds<span>110</span></li>
+				<li data="280"  class="t-transi">Rg<span>111</span></li>
+				<li data="285"  class="t-transi">Cn<span>112</span></li>
+				<li data="284"  class="t-post">Uut<span>113</span></li>
+				<li data="289"  class="t-post">Uuq<span>114</span></li>
+				<li data="288"  class="t-post">Uup<span>115</span></li>
+				<li data="293"  class="t-post">Uuh<span>116</span></li>
+				<li data="294"  class="t-Halo">Uus<span>117</span></li>
+				<li data="294"  class="t-Noble">Uuo<span>118</span></li>
+								<!-- ligne vide -->
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+									<!-- ligne One rare -->
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li data="138.9055"  class="t-Lanta">La<span>57</span></li>
+				<li data="140.116"  class="t-Lanta">Ce<span>58</span></li>
+				<li data="140.9076"  class="t-Lanta">Pr<span>59</span></li>
+				<li data="144.242"  class="t-Lanta">Nd<span>60</span></li>
+				<li data="145"  class="t-Lanta">Pm<span>61</span></li>
+				<li data="150.36"  class="t-Lanta">Sm<span>62</span></li>
+				<li data="151.964"  class="t-Lanta">Eu<span>63</span></li>
+				<li data="157.25"  class="t-Lanta">Gd<span>64</span></li>
+				<li data="158.9254"  class="t-Lanta">Tb<span>65</span></li>
+				<li data="162.5"  class="t-Lanta">Dy<span>66</span></li>
+				<li data="164.9303"  class="t-Lanta">Ho<span>67</span></li>
+				<li data="167.259"  class="t-Lanta">Er<span>68</span></li>
+				<li data="168.9342"  class="t-Lanta">Tm<span>69</span></li>
+				<li data="173.054"  class="t-Lanta">Yb<span>70</span></li>
+				<li data="174.9668"  class="t-Lanta">Lu<span>71</span></li>
+									<!-- ligne One rare -->
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li class="empty"></li>
+				<li data="227"  class="t-Acti">Ac<span>89</span></li>
+				<li data="232.038"  class="t-Acti">Th<span>90</span></li>
+				<li data="231.0359"  class="t-Acti">Pa<span>91</span></li>
+				<li data="238.0289"  class="t-Acti">U<span>92</span></li>
+				<li data="237"  class="t-Acti">Np<span>93</span></li>
+				<li data="244"  class="t-Acti">Pu<span>94</span></li>
+				<li data="243"  class="t-Acti">Am<span>95</span></li>
+				<li data="247"  class="t-Acti">Cm<span>96</span></li>
+				<li data="247"  class="t-Acti">Bk<span>97</span></li>
+				<li data="251"  class="t-Acti">Cf<span>98</span></li>
+				<li data="252"  class="t-Acti">Es<span>99</span></li>
+				<li data="257"  class="t-Acti">Fm<span>100</span></li>
+				<li data="258"  class="t-Acti">Md<span>101</span></li>
+				<li data="259"  class="t-Acti">No<span>102</span></li>
+				<li data="262"  class="t-Acti">Lr<span>103</span></li>
+			</ul>
+		</div>
+	</body>
+		<div class = "footer">
+			<img src ="http://i.imgur.com/13EaN4k.jpg", alt= "XKCD">
+		</div>
+
+</html>
