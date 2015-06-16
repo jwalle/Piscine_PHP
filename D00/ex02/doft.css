@@ -56,23 +56,37 @@ a		{position: absolute;}
 #ikea a	{width: 100px;
 		height: 200px;
 		top: 500px;
-		left: 550px;
+		left: 770px;
 		padding-left: 25px;}
 
 #apple a{width: 100px;
 		height: 100px;
-		top: 500px;
-		left: 850px;
+		top: 490px;
+		left:1080px;
 		padding-left: 25px;}
 
 #loupe	{position: relative;
-		left: 1140px;
+		left: 1150px;
 		top: 25px;}
 
 #close	{position: relative;
-		left: 1120px;}
+		left: 1150px;
+		top : 120px;}
 
 #reload {position: relative;
 		height: 20px;
 		left: 1145px;
-		top: 20px;}
+		top: 10px;}
+
+.green	{position: relative;
+		top: -100px;
+		left: -35px;
+		width: 500px;
+		padding: 20px 10px 50px 10px;
+		background-color: #88FF89;
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing:1px;
+		border-radius: 17px 17px 17px 17px;
+		box-shadow: 14px 10px 10px 1px rgba(0,0,0,0.75);
+}
