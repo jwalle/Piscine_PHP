@@ -40,6 +40,7 @@ aside	{width: 150px;
 
 .side_l, .side_r {width: 75px;
 		margin: 1px 30px;
+		
 }
 
 article	{display: inline-block;
@@ -89,4 +90,5 @@ a		{position: absolute;}
 		letter-spacing:1px;
 		border-radius: 17px 17px 17px 17px;
 		box-shadow: 14px 10px 10px 1px rgba(0,0,0,0.75);
+		font-family: verdana;
 }
