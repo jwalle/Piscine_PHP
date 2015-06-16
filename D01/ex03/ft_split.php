@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?php
-
 function ft_split($str)
 {
 	$pattern = '/\s+/';
@@ -10,6 +9,4 @@ function ft_split($str)
 	sort($tab, SORT_STRING);
 	return $tab;
 }
-
-print_r(ft_split("    Hello   World    AAA     "));
 ?>
