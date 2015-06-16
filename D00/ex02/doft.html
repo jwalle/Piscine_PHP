@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Doft</title>
+		<link rel="stylesheet" type="text/css" href="doft.css">
+		<title>Day of the 42</title>
 	</head>
-	<body bgcolor = grey>
-
-		<header>
-			<img src ="./resources/day_of_the_42.png" alt ="doft42">
+	<body>
+		<div style="width: 1435px; margin: auto; text-align:left;">
+		<header class="box">
+			<img id = "loupe" src="./resources/loupe.png"/>
+			<a href="http://www.disney.com"><img title="Recommencer au début" id="reload" src="resources/reload.png"/></a>
+			<a href="http://www.relaischateaux.com"><img id="close" title="Déconnecter" src="./resources/close.gif"></a>
 		</header>
-		<div class= "container">
-			<div = "left">
-				<img src = "./resources/arrow.png" alt = "main">
-			</div>
-			<div class = "center">
-				<img src = "./resources/cluster.jpg" alt = "main">
-			</div>
-			<div class = "right">
-				<img src = "./resources/book.png" alt = "book">
-			</div>
-		</div>
+		<aside class= "box">
+			<img class = "side_l" src = "./resources/arrow.png" alt = "Avancer" title = "Avancer">
+			<img class = "side_l" src = "./resources/main.png" alt = "Prendre" title = "Prendre">
+			<img class = "side_l, oeil" src = "./resources/oeil.png" alt = "Regarder" title = "Regarder">
+			<img class = "side_l" src = "./resources/outil.png" alt = "Utiliser" title = "Utiliser">
+			<img class = "side_l" src = "./resources/chat-icon.png" alt = "Parler" title = "Parler">
+		</aside>
+		<article class="box">
+			<img src="resources/cluster.jpg">
+			<div id = "ikea"><a href="http://www.ikea.com"></a></div>
+			<div id = "apple"><a href="http://www.apple.com"></a></div>
+		</article>
+		<aside class="box" style="height: 425px;">
+			<img class="side_r" src="resources/book.png" title="and segfault">
+			<img class="side_r" src="resources/towel.png" title="42">
+			<div style="height: 70px; background-image: url('resources/brick.jpg'); margin: 0 10px;" title="Ceci n'est pas un mur"></div>
+		</aside>
+		<div class="box" style="position: relative; top: -100px; left: -35px; width: 500px; padding: 20px 10px 50px 10px; background-color: #88FF89; font-size: 16px; line-height: 25px; letter-spacing:1px;">Vous <span style="font-size: 35px; /*font-family: serif;*/">entrez</span> alors dans une grande piece remplie d'<span style="text-shadow: 5px 5px 3px red">ordinateurs</span>...<br/>- Bonjour, vous êtes nouveau ici ?<br/><form><input style="width: 300px;"/><input type="submit" value="Repondre"></input></form></div>
+	</div>
 	</body>
 </html>

@@ -1,0 +1,78 @@
+body	{	background-color: #403f3d;
+			text-align: center;
+			vertical-align: top;}
+
+.box 	{	
+			-webkit-box-shadow: 14px 10px 10px 1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 14px 10px 10px 1px rgba(0,0,0,0.75);
+			box-shadow: 14px 10px 10px 1px rgba(0,0,0,0.75);
+			border-radius: 17px 17px 17px 17px;
+			-moz-border-radius: 17px 17px 17px 17px;
+			-webkit-border-radius: 17px 17px 17px 17px;
+			background-color: #909090;}
+
+header {background-image: url("./resources/day_of_the_42.png");
+		background-repeat: no-repeat;
+		background-size: 550px;
+		background-position: 0px 10px;
+		height: 150px;
+		width: 1435px;}
+
+.center	{display: inline-block;
+		width: 1000px;
+		margin: 20px 10px;
+		vertical-align: top;
+		padding: 10px;}
+
+
+aside	{width: 150px;
+		margin: 20px;
+		padding: 10px 0;
+		display: inline-block;
+		vertical-align: top;
+}
+
+.oeil	{border: 5px solid red;
+		border-radius: 7px;
+		width: 50%;
+		margin: 1px 30px;
+	}
+
+.side_l, .side_r {width: 75px;
+		margin: 1px 30px;
+}
+
+article	{display: inline-block;
+		width: 1000px;
+		margin: 20px 10px;
+		vertical-align: top;
+		padding: 10px;}
+
+img		{max-height: 100%;
+		max-width: 100%;}
+
+a		{position: absolute;}
+
+#ikea a	{width: 100px;
+		height: 200px;
+		top: 500px;
+		left: 550px;
+		padding-left: 25px;}
+
+#apple a{width: 100px;
+		height: 100px;
+		top: 500px;
+		left: 850px;
+		padding-left: 25px;}
+
+#loupe	{position: relative;
+		left: 1140px;
+		top: 25px;}
+
+#close	{position: relative;
+		left: 1120px;}
+
+#reload {position: relative;
+		height: 20px;
+		left: 1145px;
+		top: 20px;}
