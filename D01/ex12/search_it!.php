@@ -12,17 +12,15 @@ if ($argc > 1)
 		$i++;
 	}
 	$tab = explode(":", $str);
-	$i = 1;
-	while ($tab[$argc])
-	{
-		if ($argv[1] == $tab[$i])
+	while ($argc)
+	{	
+		if (!strcmp($argv[1],$tab[$argc]))
 		{
 			$argc++;
-			print($tab[$argc--])."\n";
+			print($tab[$argc])."\n";
 			return ;
 		}
-		$argc--;
-		$argc--;
+		$argc -= 2;
 	}
 }
 ?>

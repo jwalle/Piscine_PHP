@@ -41,7 +41,7 @@ if ($argc == 2)
 		echo "Wrong Format\n";
 		return ;
 	}
-	print("$day/$month/$year $hour h $min m $sec s\n");
+	//print("$day/$month/$year $hour h $min m $sec s\n");
 	$time = mktime($hour, $min, $sec, $month, $day, $year);
 	print("$time\n");
 }
