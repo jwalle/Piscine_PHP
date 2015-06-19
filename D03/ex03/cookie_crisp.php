@@ -11,5 +11,5 @@
 	else if ($action === "del")
 		setcookie($name, $value, time() - 3600);
 	else if ($action === "get" && $_COOKIE[$name])
-			echo $_COOKIE[$name]."n";
+			echo $_COOKIE[$name]."\n";
 ?>

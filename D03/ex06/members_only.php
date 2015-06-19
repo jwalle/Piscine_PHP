@@ -5,14 +5,11 @@
 	if ($_SERVER['PHP_AUTH_PW'])
 		$pw = $_SERVER['PHP_AUTH_PW'];
 
-	//if ($user.":".$pw === "zaz:jaimelespetitsponeys")
-	if ($user.":".$pw === "zaz:jaime")
+	if ($user.":".$pw === "zaz:jaimelespetitsponeys")
 	{
 		
-		//$base_img = base64_encode(file_get_contents("../img/42.png"));
 		echo "<html><body>\nBonjour Zaz<br />\n<img src='data:image/png;base64,";
 		echo base64_encode(file_get_contents("../img/42.png"));
-		//echo $base_img;
 		echo "'>\n";
 		echo "</body></html>\n";
 	}
