@@ -36,13 +36,14 @@ if ($argc == 2)
 		$min = intval($hour_total[1]);
 	if (is_numeric($hour_total[2]))
 		$sec = intval($hour_total[2]);
-	if (!$year || !$hour || !$min || !$sec || !$month || !$day)
+	$time = mktime($hour, $min, $sec, $month, $day, $year);
+	if (!$year || !$hour || !$min || !$sec || !$month || !$day || $time <= 0)
 	{
 		echo "Wrong Format\n";
 		return ;
 	}
 	//print("$day/$month/$year $hour h $min m $sec s\n");
-	$time = mktime($hour, $min, $sec, $month, $day, $year);
+
 	print("$time\n");
 }
 ?>
