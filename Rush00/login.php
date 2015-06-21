@@ -15,7 +15,7 @@
 	{
 		$_SESSION['loggued_on_user'] = $login;
 		//echo "OK\n";
-		header('Location: login.html');
+		//header('Location: login.html');
+		header('Refresh: 1');
 	}
-	
 ?>

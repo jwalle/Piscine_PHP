@@ -1,46 +1,41 @@
 <?PHP
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "chupa";
+$port	= 3306;
 	
 	session_start();
-	
-	if (file_exists("../private/passwd"))
-	{
-		$tab = file_get_contents("../private/passwd");
-		$tab = unserialize($tab);
-	}
-	else
-	{
-		mkdir("../private");
-	}
+	$conn = mysqli_connect($servername, $username, $password, $dbname, $port);
 
 	if ($_POST['login'] && $_POST['passwd'] && $_POST['submit'] == "OK")
 	{
 		$login = $_POST['login'];
-
-		foreach ($tab as $elem)
-		{
-			if ($elem['login'] == $login)
-			{
-				//echo "ERROR\n";
-				header('Location: create_wrong.html');
-				return;
-			}
-		}
-
-		$i = 0;
-		$passwd_h = hash('whirlpool', $_POST['passwd']);
-		while ($tab[$i])
-			$i++;
-		$tab[$i] = array("login" => $login, "passwd" => $passwd_h);
-		$tab = serialize($tab);
-		file_put_contents("../private/passwd", $tab);
-		//echo "OK\n";
-		header('Location: create_right.html');
+		$sql = "SELECT username FROM users WHERE username =  '$login'";
+		$result = mysqli_query($conn, $sql);
 	}
 	else
 	{
-		//echo "ERROR\n";
-		header('Location: create_wrong.html');
+		//header('Location: create_wrong.html');
+		echo "Mauvaise";
 		return;
 	}
+	
+
+	if (mysqli_num_rows($result) > 0)
+	{
+		header('Location: create_wrong.html');
+	}
+	else
+	{
+		$passwd_h = hash('whirlpool', $_POST['passwd']);
+		$req = "INSERT INTO `users` (`username`, `password`) VALUES('$login', '$passwd_h');";
+		mysqli_query($conn, $req);
+		mysqli_close($conn);
+		header('Location: create_right.html');
+		header('Location: index.php');
+	}	
+		//include ("create_right.html");
+
 
 ?>

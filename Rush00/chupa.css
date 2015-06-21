@@ -22,6 +22,9 @@ body			{margin: 0 0 45px;}
 	margin-right: auto;
 }
 
+/*#bienvenue		{position: relative;
+				margin: 0px 0px;}*/
+
 .buttons
 {
 	float: right; 
@@ -44,7 +47,7 @@ iframe
 	padding-top: 30px;
 }
 
-.form_login
+.form_login, #bienvenue  /*ATTEEEENTTTTIOON A CA*/
 {
 	position: absolute;
 	left: 280px;	
