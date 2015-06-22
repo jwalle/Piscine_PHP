@@ -1,0 +1,1 @@
+SELECT `nom` AS UPPER(`nom`), `prenom`, `prix` FROM `abonnement` WHERE `prix` > 42 ORDER BY `nom` ASC `prenom` DESC;
