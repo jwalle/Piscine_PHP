@@ -1,0 +1,42 @@
+
+<- Vertex ----------------------------------------------------------------------
+A Vertex is defined by 5 elements (x, y, z, w, color).
+The 4 first elements are his coordinates and the last one, his color.
+
+Vertex can be constructed using the function __construct(array $kwargs).
+
+In order to use this function, 'x', 'y' and 'z' have to be defined.
+The variable 'w' is defined by default on 1.0 and the 'color' on white but 
+you can easily defined them differently by addind arguments while calling 
+this function (use setcolor(Color $color), cf [Color Class doc]).
+
+The functions 'getX', 'getY', 'getZ', 'getW' and 'getColor' returns 
+respectively the values of '$_x', '$_y', '$_Z', '$_w' and '$_color'.
+
+The variables 'x', 'y', 'z', 'w' and 'color' are privated, you must use 
+'setX', 'setY', 'setZ', 'setW' and 'setColor' functions to change the values.
+---------------------------------------------------------------------- Vertex ->
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) constructed
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) )
+Vertex( x: 1.00, y: 0.00, z:0.00, w:1.00, Color( red:   0, green: 255, blue:   0 ) ) constructed
+Vertex( x: 0.00, y: 1.00, z:0.00, w:1.00, Color( red: 255, green:   0, blue:   0 ) ) constructed
+Vertex( x: 0.00, y: 0.00, z:1.00, w:1.00, Color( red:   0, green:   0, blue: 255 ) ) constructed
+Vertex( x: 1.00, y: 0.00, z:0.00, w:1.00, Color( red:   0, green: 255, blue:   0 ) )
+Vertex( x: 0.00, y: 1.00, z:0.00, w:1.00, Color( red: 255, green:   0, blue:   0 ) )
+Vertex( x: 0.00, y: 0.00, z:1.00, w:1.00, Color( red:   0, green:   0, blue: 255 ) )
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00 )
+Vertex( x: 4.20, y: 0.00, z:0.00, w:1.00 )
+Vertex( x: 4.20, y: 4.20, z:0.00, w:1.00 )
+Vertex( x: 0.00, y: 4.20, z:0.00, w:1.00 )
+Vertex( x: 3.00, y: 3.00, z:3.00, w:1.00 )
+Vertex( x: 9.00, y: 9.00, z:9.00, w:3.00 )
+Vertex( x: 9.00, y: 9.00, z:9.00, w:3.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 3.00, y: 3.00, z:3.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 0.00, y: 4.20, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 4.20, y: 4.20, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 4.20, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
+Vertex( x: 0.00, y: 0.00, z:1.00, w:1.00, Color( red:   0, green:   0, blue: 255 ) ) destructed
+Vertex( x: 0.00, y: 1.00, z:0.00, w:1.00, Color( red: 255, green:   0, blue:   0 ) ) destructed
+Vertex( x: 1.00, y: 0.00, z:0.00, w:1.00, Color( red:   0, green: 255, blue:   0 ) ) destructed
+Vertex( x: 0.00, y: 0.00, z:0.00, w:1.00, Color( red: 255, green: 255, blue: 255 ) ) destructed
