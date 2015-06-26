@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Dat board</title>
+<link rel="stylesheet" type="text/css" href="board.css">
+</head>
+<body>
+
+<h1>THE board.</h1>
+
+<table>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+var myArray    = new Array();
+    myArray[0] = "1";
+    myArray[1] = "2";
+    myArray[2] = "3";
+    myArray[3] = "4";
+    myArray[4] = "5";
+
+
+<?php
+
+	include_once("Dice.class.php");
+	$dice = new dice(1);
+
+?>
+
+var myVar = <?php echo $dice->roll(); ?> ;
+
+for (var j=0; j<100; j++) {
+	document.write("<tr>");
+	for (var i=0; i<150; i++) {
+		document.write("<td></td>");
+  	}
+	document.write("</tr>");
+}
+
+
+//-->
+</script>
+
+</table>
+
+</body>
+</html>
