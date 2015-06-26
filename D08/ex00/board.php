@@ -1,16 +1,19 @@
+<?php
+	include_once("Dice.class.php");
+	$dice = new dice(1);
+?>
 <html>
 <head>
-<title>Table of Phone Numbers</title>
-
+<title>Dat board</title>
+<link rel="stylesheet" type="text/css" href="board.css">
 </head>
 <body>
 
-<h1>Table of Phone Numbers</h1>
+<h1>TyE boarde.</h1>
 
-<table border="1">
+<table>
 
-<script language="javascript" type="text/javascript">
-<!--
+<script type="text/javascript">
 
 var myArray    = new Array();
     myArray[0] = "1";
@@ -19,12 +22,15 @@ var myArray    = new Array();
     myArray[3] = "4";
     myArray[4] = "5";
 
-for (var i=0; i<5; i++) {
-  document.write("<tr><td>Number " + i + " is:</td>");
-  document.write("<td>" + myArray[i] + "</td></tr>");
-}
 
-//-->
+
+for (var j=0; j<100; j++) {
+	document.write("<tr>");
+	for (var i=0; i<150; i++) {
+		document.write("<td>" + <?php echo $dice->roll(); ?>  + "</td>");
+  	}
+	document.write("</tr>");
+}
 </script>
 
 </table>
